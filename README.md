@@ -28,7 +28,7 @@ https://dbdiagram.io/d/bd_1-6731cfe9e9daa85aca02f086
 ![BD](bd.png)
 
 Запущенна база даних в DBeaver:
-![BD1](bd_.png)
+![BD1](bd_.jpg)
 
 
 ### Основні таблиці
