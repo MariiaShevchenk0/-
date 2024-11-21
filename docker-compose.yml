@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  mysql-db:
+    image: mysql:latest
+    container_name: mysql_hotel
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: hotel
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+    volumes:
+      - ./create_tables.sql:/docker-entrypoint-initdb.d/1_create_tables.sql
+      - ./insert_data.sql:/docker-entrypoint-initdb.d/2_insert_data.sql
+      - ./functions_procedures.sql:/docker-entrypoint-initdb.d/3_functions_procedures.sql
+      - ./triggers.sql:/docker-entrypoint-initdb.d/4_triggers.sql
+      - ./views.sql:/docker-entrypoint-initdb.d/5_views.sql
