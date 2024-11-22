@@ -24,7 +24,7 @@
 
 ### Розроблена схема бази даних 
 В dbdiagram.io
-https://dbdiagram.io/d/bd_1-6731cfe9e9daa85aca02f086
+https://dbdiagram.io/d/hotel-67409e71e9daa85aca65314d
 ![BD](bd.png)
 
 Запущенна база даних в DBeaver:
